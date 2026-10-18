@@ -205,3 +205,22 @@ five-digit hands remain unchanged. Full PNG and JPEG were visually inspected.
 The explicit dist/line-1/31.jpg path takes precedence over the contradictory
 general image-location rule. No other new picture was saved in the workspace.
 Number 31 follows the literal record count; the goal is unchanged.
+
+# Step 32 — Additions accounted for
+
+Read the unchanged line goal, gathering 32 report, Tree Review implementation,
+and existing merge tool documentation. Gathering reported no broken line-1
+checks. Addition Audit uses Python's standard library and the bounded snapshots
+and merge computation from `tools/tree-review/tree_review.py`. It inventories
+exact branch-added lines and flags any that are absent from the recomputed
+candidate. Six focused tests and its pass/omission demo worked. It needs no
+coin, network, wallet, key, payment, or chain data.
+
+Used imagegen to edit the inherited wall, adding a small two-strand braid on
+bare rock. The cave frame, torchlit rock, crystals, floor, Pepe and earlier
+marks remain visible. Saved the complete 1254-square PNG at wall-v13.png and
+wall.png, plus the required 512-square JPEG. Visual requirements were reviewed
+from both outputs; no unmet visual requirement was observed. This is a local
+review, not independent approval. The required JPEG beside the dist record is
+outside artifacts/ despite the contradictory blanket image-location sentence.
+

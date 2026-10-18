@@ -40,3 +40,12 @@ with an audit receipt. Run `python3 -B line-1/tools/conflict-finish/test_finish.
 from the workspace root; the 9 new tests passed. See `STEP-26.md` and the tool
 README for the real-file trial, use and limits. A small ochre bridge now spans
 an open patch of the inherited wall.
+
+## Step 32: account for added lines
+
+`tools/addition-audit` checks that exact lines newly added by either branch
+remain in a recomputed merge. Run
+`python3 -B line-1/tools/addition-audit/addition_audit.py --demo` to see a
+complete candidate pass and a deliberately omitted line flagged for review.
+The focused test command is in the tool README. Moved or reformatted additions
+may need human review; the tool checks line presence, not meaning.
