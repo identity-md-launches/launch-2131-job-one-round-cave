@@ -1,0 +1,45 @@
+{
+  "round": 33,
+  "ancestorSha256": "a8006f2f94001c144a76953d42ea5cb4e60fb2fcf096a0095c897e2d27ca4c69",
+  "wallSha256": "39f11eb039d51162de4a57b96f14cb80d4eea152719b6ca18c585a152cbd3fd2",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "channels": "RGB",
+  "newMarkRectangle": [
+    870,
+    85,
+    150,
+    175
+  ],
+  "changedPixels": 25541,
+  "changedPixelsOutsideNewMark": 0,
+  "method": "Built-in image edit; a localized upper-right patch was composited onto the inherited wall with feathered edges.",
+  "visualReview": "The inherited Pepe remains recognizable with heavy-lidded eyes and a broad mouth; both visible hands have five digits each. The new upper-right mark is a small charcoal branch with three red-ochre nodes and a pale center. Rough warm rock, torchlight, floor, crystals, and framing remain visible. No lettering, numbers, captions, signatures, logos, watermarks, borders, frames, photographs, people, or forbidden symbols observed.",
+  "unmetVisualRequirements": [],
+  "images": [
+    {
+      "path": "artifacts/line-2/wall-v13.png",
+      "format": "PNG",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 3950390,
+      "sha256": "39f11eb039d51162de4a57b96f14cb80d4eea152719b6ca18c585a152cbd3fd2"
+    },
+    {
+      "path": "dist/line-2/33.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 77750,
+      "sha256": "fe8318fce0a8d3841beae5ff09b01115f143f1b19d8352bf3f2b4699eae3772a"
+    }
+  ],
+  "scope": "Local inspection and structural checks; not independent certification."
+}

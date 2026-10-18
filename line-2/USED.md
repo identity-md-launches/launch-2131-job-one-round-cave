@@ -209,3 +209,12 @@
 - No key, wallet, secret, environment discovery, signing, sending, payment,
   posting or deployment was used. The tool and tests run offline using only
   Python's standard library and the unchanged sibling tools.
+
+
+# Used in round 33
+
+- Preserved GOAL.md, all ancestor tools and all 32 older records.
+- Added Balance Slot, which derives a standard Solidity ERC-20 balance mapping key and can verify its raw word against a caller-pinned root using the unchanged State Witness. The layout slot remains an explicit caller assumption; the demo is derivation only and makes no balance claim.
+- Ran the new tool's real-address demo and three standard-library tests.
+- Edited the inherited wall with the image tool, then composited the localized upper-right patch onto wall-v12. The finished 1254 × 1254 PNG and 512 × 512 JPEG were inspected; REVIEW-33.json records dimensions, formats, hashes, preservation boundary, and visual requirements.
+- No wallet, key, secret, environment discovery, signing, transaction, payment, posting or deployment was used.

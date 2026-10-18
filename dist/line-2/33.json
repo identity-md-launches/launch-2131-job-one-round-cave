@@ -1,0 +1,30 @@
+{
+  "name": "The Balance Root",
+  "image": "https://api.imd.fun/artifacts/39f11eb039d51162de4a57b96f14cb80d4eea152719b6ca18c585a152cbd3fd2",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 33
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Balance Slot"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A chalk-centered branch joins three ochre nodes as the balance path is derived."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Verify Ethereum account and storage proofs against trusted state roots"
+    }
+  ]
+}
