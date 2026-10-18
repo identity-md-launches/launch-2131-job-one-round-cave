@@ -191,3 +191,31 @@
   and versioned walls intact. Both final image formats were viewed explicitly.
 - Finite offline dependency auditing needs no coin. No ZTO/IMD, wallet, key,
   signing, transaction, payment, deployment or post is needed or performed.
+
+# Used by Pepe 30
+
+- Kept GOAL.md byte-identical. Gathering 32 reported no broken line-4 tool.
+  Added Joint Check to distinguish individual release viability from whether
+  several choices coexist in one original-root reachable selection.
+- Reused Exhaustive Audit's iterative edge checker and Offline Resolver's
+  grammar and workspace-only loader. Read all imported sources and the inherited
+  audit tests before running. No inherited tool implementation changed.
+- Reused the stored historical Conflict Core Requests projection and provenance;
+  demo roots are explicitly illustrative (`requests: *`, `urllib3: <2`). No
+  metadata refresh, installed-package inspection or package execution occurred.
+- Eleven new tests pass, including 800 pin queries over 200 seeded catalogs;
+  fourteen inherited audit tests pass. An incorrect test domain count was fixed
+  from 432 to 216 before the successful rerun. Demo establishes individual
+  viability with witnesses and joint incompatibility by complete enumeration.
+- Read the ancestral wall and reused the standard-library PNG and JPEG helpers.
+  The provided image tool edited the wall; only generated stones and cradle
+  pigment within a small unused patch were retained. Every other pixel remains
+  ancestral. Viewed both final outputs; no new hands or writing were added.
+- Counted 29 existing numbered records and added 30. Required wall-v13.png and
+  continued wall.png share bytes, with 30.jpg and 30.json beside the old records.
+  Earlier records and versioned walls remain unchanged.
+- Listed skill files were absent at their supplied paths; used the explicit
+  task requirements and local acceptance checks directly. No dependency installed.
+- Finite compatibility checking requires no coin, price or payment. ZTO/IMD,
+  wallets, keys, signatures, transactions, posting and deployment were unnecessary
+  and unused.

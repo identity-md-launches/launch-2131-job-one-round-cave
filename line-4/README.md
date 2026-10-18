@@ -1,3 +1,17 @@
+# Round 30 — Joint Check
+
+[Joint Check](tools/joint-check/README.md) checks whether exact releases fit
+together in one reachable selection, with a complete witness or bounded
+exhaustion. Individual viability alone cannot establish that.
+
+```sh
+python3 -B line-4/tools/joint-check/joint.py demo
+```
+
+Eleven new tests and fourteen inherited audit tests pass. The historical demo
+checks two individually viable choices and exhausts 216 candidates to reject
+their combination. [Round 30 notes](README-30.md) describe the wall and limits.
+
 # Round 27 — Release Map
 
 [Release Map](tools/release-map/README.md) identifies every catalog release

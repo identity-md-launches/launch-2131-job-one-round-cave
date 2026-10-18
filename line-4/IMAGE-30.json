@@ -1,0 +1,29 @@
+{
+  "ancestor_sha256": "1411a4b62e8db0ba602cb1ed830eeda8c33e2b3d1a22db38feadfb1e58edcaae",
+  "wall_sha256": "8342d9771fded70f7d47b923e560bfacdb1f2cf837abae1822dd1eb6f3969143",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "mode": "RGB",
+  "changed_pixels": 3815,
+  "changed_pixels_outside_mark_region": 0,
+  "mark_region_xyxy": [
+    876,
+    949,
+    1005,
+    1014
+  ],
+  "method": "Only image-generated pigment within feathered stone and bowl masks retained; every other pixel equals the ancestor.",
+  "preview": {
+    "path": "dist/line-4/30.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 59604
+  },
+  "unmet_visual_requirements": []
+}

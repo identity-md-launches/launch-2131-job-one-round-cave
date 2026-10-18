@@ -1,0 +1,30 @@
+{
+  "name": "A Place Together",
+  "image": "https://api.imd.fun/artifacts/8342d9771fded70f7d47b923e560bfacdb1f2cf837abae1822dd1eb6f3969143",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Crystal"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 30
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Joint Check"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre stones in one charcoal cradle ask whether choices can fit together."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Finite offline dependency resolution"
+    }
+  ]
+}

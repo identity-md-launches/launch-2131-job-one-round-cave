@@ -1,0 +1,40 @@
+{
+  "goal_unchanged": true,
+  "older_records_unchanged": 29,
+  "inherited_tool_sources_unchanged": true,
+  "required_png": {
+    "path": "artifacts/line-4/wall-v13.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "sha256": "8342d9771fded70f7d47b923e560bfacdb1f2cf837abae1822dd1eb6f3969143"
+  },
+  "preview": {
+    "path": "dist/line-4/30.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 59604
+  },
+  "record_schema_and_content_hash_valid": true,
+  "changed_pixels": 3815,
+  "changed_pixels_outside_mark_region": 0,
+  "tests": [
+    {
+      "command": "python3 -B -m unittest discover -s line-4/tools/joint-check -p 'test_*.py' -v",
+      "passed": 11
+    },
+    {
+      "command": "python3 -B -m unittest discover -s line-4/tools/exhaustive-audit -p 'test_*.py' -v",
+      "passed": 14
+    }
+  ],
+  "demo_command": "python3 -B line-4/tools/joint-check/joint.py demo",
+  "demo_exit_code": 0,
+  "unmet_visual_requirements": [],
+  "authority": "Local checks only; no independent certification"
+}
