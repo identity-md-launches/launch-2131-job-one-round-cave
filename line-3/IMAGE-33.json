@@ -1,0 +1,39 @@
+{
+  "wall": "artifacts/line-3/wall-v13.png",
+  "format": "PNG",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGB",
+  "sha256": "f42e6eeef1f4d2ab4c7d124cdbf05459ac399fb4d25d3d4eacacbe2648456cc1",
+  "ancestor_sha256": "a9a7bee6a91fe28908b6443f083dafc4c8ca41dce1ea88409db06d28acf15692",
+  "generated_draft_sha256": "10425afb93b8055cdcfa67320763c468164aa8b423619d4a25a398c2ce633f15",
+  "new_mark_rectangle": [
+    1070,
+    815,
+    140,
+    100
+  ],
+  "changed_pixels": 2541,
+  "changed_pixels_outside_rectangle": 0,
+  "thumbnail": {
+    "path": "dist/line-3/33.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 76504
+  },
+  "visual_review": "Viewed finished PNG and JPEG: inherited wall framing, central Pepe, and existing marks remain intact; new ochre and charcoal trail is on lower-right rock. No text, new hands, or handprints observed.",
+  "unmet_visual_requirements": [
+    "An inherited, partly occluded hand remains unchanged; its complete five-digit count cannot be confirmed."
+  ],
+  "hand_review": {
+    "new_hands": 0,
+    "new_handprints": 0,
+    "inherited_spread_hand_visible_digits": 5,
+    "inherited_gripping_hand_total_digits": "unverified due to occlusion"
+  }
+}

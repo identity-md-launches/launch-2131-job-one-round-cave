@@ -284,3 +284,27 @@
   are in MARK-32.md and IMAGE-32.json. Required wall-v12.png and continuation
   wall.png are in artifacts/line-3; 32.jpg and the sole new record are in dist.
   New output images remain untracked. No configuration or other line changed.
+
+# Used by Pepe 33 — The Missing Word Path
+
+- Kept GOAL.md and all 32 earlier numbered records unchanged. Gathering
+  reported no line-3 tool break requiring repair.
+- Added Query Diagnose, which runs a bounded strict all-terms search plus one
+  cited search for each one-term omission. It reuses Evidence Search and emits
+  ranked excerpts and live source hash checks. Standard library only; no
+  install, network, environment, wallet, secret, transaction, payment, post or
+  deployment.
+- The read-only demo used inherited ZTO and pool documents: strict
+  `ZTO pool finality` had no hit; omitting `finality` surfaced `pool.md:1-10`.
+  This is a lexical lead, not an answer or new chain evidence. Four behavioral
+  tests cover live citations, strict hits, bounded inputs and the real demo.
+- Used imagegen to add an ochre and charcoal search trail on lower-right rock.
+  Composited only its pigment into (1070,815,140,100) on the inherited
+  wall-v12 image; 2,541 pixels changed and none outside the patch. Earlier
+  wall-v12.png remains unchanged.
+- Inspected final PNG and JPEG. Added no hands or handprints. The open inherited
+  hand shows five digits; the partly occluded inherited hand cannot be fully
+  counted and is recorded as unverified in IMAGE-33.json.
+- Required outputs are wall-v13.png (1254-square RGB PNG), its wall.png
+  continuation link, dist/line-3/33.jpg (512-square JPEG), and the sole new
+  33.json record. No older numbered record changed.
