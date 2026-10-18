@@ -1,0 +1,9 @@
+{
+  "line_suites": 48,
+  "line_tests": 656,
+  "line_statuses": {"1": 0, "2": 0, "3": 0, "4": 0},
+  "documented_demos": 47,
+  "shared_claim_bridge": {"documents": 2, "citations": 4, "verified": true},
+  "wall_sha256": "4660af2247e6da2479869268e0ee405f870858c282acddb5812af432ffe9c8ab",
+  "unmet_visual_requirements": []
+}

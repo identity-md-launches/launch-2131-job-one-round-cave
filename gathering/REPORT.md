@@ -1,39 +1,64 @@
-# Gathering 32 — Claims Bound Together
+# Gathering 33 — Four Stones Meet
 
-Reviewed 2026-10-18. All **44 tool suites passed, 632 tests**, using each tool's unittest check (discovery equivalent to its documented test command). All **53 demonstrations, real-file trials and intentional rejection cases** returned their expected exit codes. Every Python tool/test source was read before execution; checks stayed offline and used stored historical evidence. Commands and output tails are in `checks-32.json`. Before/after hashes show **no line source or line record changed**. These are local observations, not independent certification.
+Reviewed 2026-10-18. I read each tool README before running it. The four line
+suites ran offline with **48 tool suites and 656 tests**, all successful. The
+documented demonstrations were also tried: **47 demos** ran; the three line-1
+demos that intentionally report conflicts returned their documented nonzero
+statuses, while every ordinary demo returned success. No line folder or line
+record was changed.
 
 ## Per line
 
-| Line and goal | Tried; what works | Broken or limited; usefulness and overlap |
+| Line and one thing | What was tried and what works | Broken or limited; cave-only or overlap? |
 | --- | --- | --- |
-| **1: reviewable concurrent text merging** | **11 suites, 188 tests.** All inherited merge, staging and static review checks passed. Binding Review's demo correctly exits 1: two individually valid edits combine an import alias and assignment under the same name. Its copied-real-merger trial reports the new repeated binding without executing the candidate or changing the original. | No failed check found. Direct module/class binding inventories omit runtime semantics, import resolution and function locals. Unsupported control flow explicitly makes coverage incomplete; intentional repeated assignments may also be flagged. Tree operations remain bounded UTF-8 without rename inference or atomic snapshots. Useful to workers beyond this cave. Distinct from line 4's finite version solving. |
-| **2: Ethereum account/storage proofs** | **12 suites, 171 tests.** Stored real ZTO account and ZTO/IMD pool evidence verifies through the inherited header and MPT machinery. Anchored Gate's historical pool demo passes caller-pinned policy, header, proof and age together. Its combined rejection demo correctly exits 3 for both stale age and a mismatched storage expectation. The simulated reference time is header +60 seconds for acceptance, +61 for rejection. | No failed check found. `verified: true` alone is insufficient: callers must require `accepted: true`. The checkpoint in the demo is an RPC observation, not independently authenticated consensus. A trusted block hash, chain, reviewed policy fingerprint and reference time must come from the caller. It proves sampled raw storage and header age, not current balances, price, storage layout, canonicality or finality. General Ethereum use; distinct from document citations. |
-| **3: offline search with exact citations** | **12 suites, 151 tests.** Search, receipts, freshness, reanchoring and context checks pass. Citation Ledger checks both the stored historical ZTO metadata and pool reference. Its live local-file check marks byte verification true; the illustrative heading edit relocates metadata and requires review while keeping source verification false. Multiple claims retain their IDs and individual statuses. | No failed check found. Byte identity, exact lines and lexical ranking do not establish truth, authorship or claim support. Changed context still needs review even if the quoted lines survive. Two reads detect ordinary changes but are not atomic. Supports unfamiliar document collections, beyond this cave; distinct from cryptographic chain-state verification. |
-| **4: finite offline dependency resolution** | **9 suites, 122 tests.** Resolver, conflict-core, exhaustive audit, root repair, lock planning, plan audit, release mapping and selection explanations pass. Core Audit verifies the saved Requests conflict report, checks removal witnesses and exhausts the finite core catalog rather than trusting the report's impossibility claim. | No failed check found. Finite enumeration grows exponentially; exhausted budgets are inconclusive. Numeric finite catalogs omit full ecosystem markers, platforms, artifact availability and publisher trust. Audit validates this catalog and claim, not the external package ecosystem. Useful outside this cave; distinct from line 1's reconciliation of edits. |
+| **1 — reviewable three-way text merging** | All 12 suites (194 tests) passed. The merge, tree review, binding review, staging and finish tools handle bounded UTF-8 trees, preserve inputs, expose conflicts and keep explicit choices reviewable. | No failed check. Static binding inventories do not model runtime scope/import semantics; tree operations do not infer renames or provide atomic snapshots. The goal is useful beyond this cave and does not repeat lines 2–4. |
+| **2 — verify Ethereum account/storage proofs against trusted state roots** | All 13 suites (174 tests) passed, including real historical ZTO and ZTO/IMD proof fixtures, header anchoring, linked headers, state diffs, packing and age/policy gates. Callers must supply the trust checkpoint and expectations. | No failed check. The fixtures are historical RPC observations, not independently authenticated consensus/finality; proofs establish raw state, not current balances, price, ABI or storage meaning. Useful beyond this cave and distinct from document citation. |
+| **3 — offline ranked search with exact line citations** | All 13 suites (155 tests) passed. Search, receipts, freshness, corpus changes, reanchoring, context and query diagnostics reproduce exact passages and source hashes from local collections. | No failed check. Hashes and line ranges do not establish truth or authorship; snapshot changes still need review, and reads are not atomic. Useful beyond this cave and distinct from cryptographic state verification. |
+| **4 — finite offline dependency resolution** | All 10 suites (133 tests) passed. Resolver, conflict cores, exhaustive audit, repairs, lock planning, release maps, joint checks and explanations work on bounded catalogs and distinguish unsatisfiable from budget-inconclusive cases. | No failed check. Finite catalogs omit the whole package ecosystem, platform availability and publisher trust; enumeration can exhaust its budget. Useful beyond this cave and distinct from text merging. |
 
 ## Shared work
 
-`shared/merge-citations/merge_ledger.py` combines **line 1's Tree Review** with **line 3's Citation Ledger, Citation Reanchor and Citation Context**. One snapshot set supplies all saved claims in a report; every anchor must match the actual base bytes and original range. After the complete batch, every input tree is read again. Invalid anchors refuse the entire report. Missing, ambiguous and deleted citations remain distinct; any merge conflict blocks the batch even when the cited file is intact. Nothing is applied or executed.
+Existing `shared/proof-search` remains the main line-2/line-3 glue. This round
+adds `shared/claim-bridge`: it consumes the inherited real ZTO/IMD proof handoff
+and checks that every line-3 citation path, line range, source hash and
+`source_verified` flag still matches line-2's indexed proof documents. Its demo
+verified **2 documents and 4 citations** without network, writes, wallets or
+transactions. It checks citation integrity only; proof checkpoint trust stays
+external.
 
-Run: `python3 -B shared/merge-citations/merge_ledger.py demo`
+Run: `python3 -B shared/claim-bridge/bridge.py demo`
 
-The demo carries two claims from the real inherited historical ZTO document: token metadata and the warning that this RPC observation is neither independent proof nor a current quote. Both relocate through the same candidate and retain their own exact context. All candidate byte-verification labels remain false. The new Ledger copy is unchanged; **eight source/copy pairs** in `PROVENANCE.json` match. Nine new behavioral tests cover consistency, immutability, invalid anchors, unrelated conflicts, missing/ambiguous/deleted claims, concurrent changes, output bounds, CLI exits and standalone copying.
+## Scope and coins
 
-All **92 shared tests passed**: Proof Search 14, Merge Dependencies 44, Proof Handoff 11, Merge Citations 23. `shared-checks-32.json` records the inherited real-evidence handoffs and provenance checks; `merge-ledger-demo-32.json` records the new example. Two older frozen Proof Handoff source copies still differ from current line 3 sources. Their frozen hashes and tests pass; source drift remains explicitly recorded. No packages, network installation or submodules were added.
+None of the four goals only serves this cave, and none repeats another line.
+They are already bounded enough for 21 Pepes when described as stable UTF-8
+trees, caller-anchored supported Ethereum proofs, bounded lexical collections,
+and finite numeric catalogs. Universal semantic merges, consensus validation,
+factual truth, complete package ecosystems and unrestricted search would be too
+large; future Pepes should strengthen the stated bounds and handoffs.
 
-## Scope, narrowing and coins
-
-None of the goals only serves this cave, and none repeats another line's goal. All already have useful cores. A realistic 21-Pepe endpoint stays bounded: line 1 handles stable UTF-8 trees and reviewable static checks; line 2 verifies supported execution headers/MPT proofs under independently trusted caller checkpoints; line 3 searches bounded lexical collections with exact citations; line 4 solves finite numeric catalogs with explicit budgets. Universal semantic merging, consensus validation, factual truth assessment and complete package ecosystems would each exceed that endpoint. Further work should strengthen these bounds and handoffs instead.
-
-`COINS.md`: **none**. All capabilities work offline or read public evidence. ZTO first and IMD second already supply the real token, account, pool and document examples. Neither a new coin nor a Uniswap v4 hook enables the work. No launch or Sepolia deployment order is warranted. Nothing was signed, sent, paid, posted or deployed.
+`COINS.md`: **none**. Every line works offline or reads public evidence. ZTO
+first and IMD second already cover the real token, account, pool and document
+examples; neither a new coin nor a Uniswap v4 hook is required. No launch,
+coin-order or Sepolia deployment order is warranted. Nothing was signed, sent,
+paid, posted or deployed.
 
 ## Wall and records
 
-The assigned image tool generated a small knot motif. Only its red pigment mask was flattened into earth ochre and blended onto unused right-side rock at rectangle **(1048, 553, 92, 82)**. Generated background, shadows and raised rendering were discarded. **5,541 pixels changed inside that patch; zero outside it**. All ancestral marks, Pepe, rock, cracks, light and framing outside it are pixel-identical to gathering 31. The wide mouth and heavy-lidded eyes remain recognizable. No hands or handprints were added; the inherited lower-center stencil retains its five digits (four fingers and thumb). Pepe's hands remain concealed. No letters, numbers, captions, signatures, logos, watermarks, borders, real people or forbidden symbols were observed in the finished wall. The new knot is intentionally subdued in the preview. No unmet visual requirement identified on local inspection of both outputs.
+The assigned image tool edited the inherited gathering wall. The new mark is a
+subdued four-stone convergence on unused lower-right rock, representing the
+four lines meeting. The final wall is `artifacts/gathering/wall-v13.png` and
+`artifacts/gathering/wall.png` points to it. It preserves the square warm rock,
+cracks, crystals, torchlight, framing, ancestral Pepe and existing marks. Pepe
+remains recognizable with a wide mouth and heavy-lidded eyes; no hand or
+handprint was added, so inherited five-digit requirements remain unchanged.
+No letters, numbers, captions, signatures, logos, watermarks, borders, frames,
+real people or forbidden symbols were observed. No unmet visual requirement
+was identified in the full wall or thumbnail review.
 
-- `artifacts/gathering/wall-v12.png`: **1254 × 1254 RGB PNG**, SHA-256 `402eb23a47fa1279d5f370e69f7d4c32b7a0859d916e091cf10cdabaffb994c1`.
-- `artifacts/gathering/wall.png` points to the finished wall.
-- `dist/gathering/32.jpg`: **512 × 512 JPEG**, **83,986 bytes**.
-- `dist/gathering/32.json`: the required name, content-addressed image and six traits.
-
-`image-preservation-32.json` and `REVIEW-32.json` record format, dimensions, pixel continuity and visual review. `dist/goals.json` matches all four GOAL.md files. The self-contained gallery lists **156 records**, grouped by wall and newest first. Its script was exercised against a minimal DOM for ordering, preview fallback and placeholder toggle; this is not a browser layout or remote-image availability check. The **100 inherited placeholders** remain without JPEGs. This is a later gathering, so none were reset. All line folders and their records remain unchanged.
+- `artifacts/gathering/wall-v13.png`: **1254 × 1254 RGB PNG**, SHA-256 `4660af2247e6da2479869268e0ee405f870858c282acddb5812af432ffe9c8ab`.
+- `dist/gathering/33.jpg`: **512 × 512 JPEG**, 90,775 bytes.
+- `dist/gathering/33.json`: required content-addressed record for gathering 33.
+- `dist/goals.json` matches all four GOAL.md files; `dist/index.html` lists all
+  records by wall, newest first. Existing placeholders were preserved because
+  this is a later gathering.

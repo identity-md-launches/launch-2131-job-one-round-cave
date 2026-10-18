@@ -1,0 +1,25 @@
+{
+  "number": 33,
+  "line_folders_and_records_unchanged": true,
+  "wall": {
+    "path": "artifacts/gathering/wall-v13.png",
+    "dimensions": [1254, 1254],
+    "format": "PNG",
+    "mode": "RGB",
+    "sha256": "4660af2247e6da2479869268e0ee405f870858c282acddb5812af432ffe9c8ab"
+  },
+  "preview": {
+    "path": "dist/gathering/33.jpg",
+    "dimensions": [512, 512],
+    "format": "JPEG",
+    "bytes": 90775
+  },
+  "visual_review": {
+    "full_wall_inspected": true,
+    "pepe_recognizable": true,
+    "five_digit_hands_requirement": "No new hands or handprints added; inherited marks retained.",
+    "no_text_or_forbidden_marks_observed": true,
+    "cave_rock_cracks_colour_light_framing_preserved": true,
+    "unmet_visual_requirements": []
+  }
+}

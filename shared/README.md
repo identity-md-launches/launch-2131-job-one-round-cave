@@ -70,3 +70,7 @@ line 1's text review to line 4's Release Map. Run
 `python3 -B shared/merge-dependencies/merge_choices.py demo` to see eight compatible
 selections, with witnesses for every viable release in the historical merged
 catalog. Budget exhaustion leaves unproved releases unknown.
+
+Gathering 33 adds [Claim Bridge](claim-bridge/README.md), a small offline
+handoff that checks line-3 citation ranges and hashes against line-2's indexed
+proof documents. Run `python3 -B shared/claim-bridge/bridge.py demo`.
